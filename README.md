@@ -5,7 +5,21 @@ RESTful API Requirements
 http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html
 
 RESTful 是目前最流行的 API 设计规范，用于 Web 数据接口的设计。
-它的大原则容易把握，但是细节不容易做对。本文总结 RESTful 的设计细节，介绍如何设计出易于理解和使用的 API。
+
+1.1 动词 + 宾语
+RESTful 的核心思想就是，客户端发出的数据操作指令都是"动词 + 宾语"的结构。比如，GET /articles这个命令，GET是动词，/articles是宾语。
+
+动词通常就是五种 HTTP 方法，对应 CRUD 操作。
+
+GET：读取（Read）
+
+POST：新建（Create）
+
+PUT：更新（Update）
+
+PATCH：更新（Update），通常是部分更新
+
+DELETE：删除（Delete）
 
 
 HTTP 动词
